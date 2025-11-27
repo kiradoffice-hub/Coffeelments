@@ -17,7 +17,7 @@ const EMAILJS_PUBLIC_KEY = 'nb75RxYtqPNBOw3O2';
 // ============================================
 // DATOS DE PRODUCTOS
 // ============================================
-const PRODUCT_IMAGE = 'images/logo.jpeg';
+const PRODUCT_IMAGE = 'images/logo-elementos.jpeg';
 
 const products = [
     {
