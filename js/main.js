@@ -54,10 +54,10 @@ const products = [
 // ============================================
 const menuItems = {
     frappes: [
-        { id: 101, name: 'Frapuccino', price: 75, category: 'drinks', type: 'frappe', image: 'images/frapuccino.jpg' },
-        { id: 102, name: 'Cajeta', price: 75, category: 'drinks', type: 'frappe', image: 'images/frappe_cajeta.jpg' },
-        { id: 103, name: 'Oreo', price: 75, category: 'drinks', type: 'frappe', image: 'images/frappe_oreo.jpg' },
-        { id: 104, name: 'Moca', price: 75, category: 'drinks', type: 'frappe', image: 'images/frappe_moca.jpg' }
+        { id: 101, name: 'Frapuccino', price: 75, category: 'drinks', type: 'frappe', image: 'images/frappe-cajeta.jpg' },
+        { id: 102, name: 'Cajeta', price: 75, category: 'drinks', type: 'frappe', image: 'images/frappe-cajeta.jpg' },
+        { id: 103, name: 'Oreo', price: 75, category: 'drinks', type: 'frappe', image: 'images/frappe-oreo.jpg' },
+        { id: 104, name: 'Moca', price: 75, category: 'drinks', type: 'frappe', image: 'images/frappe-moca.jpg' }
     ],
     hotCoffee: [
         { id: 201, name: 'Espresso', prices: { 'Chico': 45, 'Grande': 48 }, category: 'drinks', type: 'hot-coffee', image: 'images/espresso.jpg' },
@@ -71,9 +71,9 @@ const menuItems = {
         { id: 209, name: 'Chocolatada', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'hot-coffee', image: 'images/chocolatada.jpg' }
     ],
     teas: [
-        { id: 301, name: 'Té Negro (Earl Grey)', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'tea', image: 'images/te_negro.jpg' },
-        { id: 302, name: 'Té Negro Chai', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'tea', image: 'images/te_chai.jpg' },
-        { id: 303, name: 'Té Verde Flamingo Limonada', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'tea', image: 'images/te_verde.jpg' },
+        { id: 301, name: 'Té Negro (Earl Grey)', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'tea', image: 'images/te-negro.jpg' },
+        { id: 302, name: 'Té Negro Chai', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'tea', image: 'images/te-chai.jpg' },
+        { id: 303, name: 'Té Verde Flamingo Limonada', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'tea', image: 'images/te-verde.jpg' },
         { id: 304, name: 'Matcha', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'tea', image: 'images/matcha.jpg' },
         { id: 305, name: 'Variedad de Tisanas', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'tea', image: 'images/tisanas.jpg' }
     ]
