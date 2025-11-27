@@ -62,12 +62,12 @@ const menuItems = {
     hotCoffee: [
         { id: 201, name: 'Espresso', prices: { 'Chico': 45, 'Grande': 48 }, category: 'drinks', type: 'hot-coffee', image: 'images/espresso.jpg' },
         { id: 202, name: 'Latte', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'hot-coffee', image: 'images/latte.jpg' },
-        { id: 203, name: 'Espresso cortado', price: 48, category: 'drinks', type: 'hot-coffee', image: 'images/espresso_cortado.jpg' },
+        { id: 203, name: 'Espresso cortado', price: 48, category: 'drinks', type: 'hot-coffee', image: 'images/espresso-cortado.jpg' },
         { id: 204, name: 'Capuchino', price: 65, category: 'drinks', type: 'hot-coffee', image: 'images/capuchino.jpg' },
         { id: 205, name: 'Americano', price: 48, category: 'drinks', type: 'hot-coffee', image: 'images/americano.jpg' },
         { id: 206, name: 'Moca', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'hot-coffee', image: 'images/moca.jpg' },
-        { id: 207, name: 'Latte caramelo', price: 72, category: 'drinks', type: 'hot-coffee', image: 'images/latte_caramelo.jpg' },
-        { id: 208, name: 'Choco-latte', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'hot-coffee', image: 'images/choco_latte.jpg' },
+        { id: 207, name: 'Latte caramelo', price: 72, category: 'drinks', type: 'hot-coffee', image: 'images/latte-caramelo.jpg' },
+        { id: 208, name: 'Choco-latte', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'hot-coffee', image: 'images/choco-latte.jpg' },
         { id: 209, name: 'Chocolatada', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'hot-coffee', image: 'images/chocolatada.jpg' }
     ],
     teas: [
