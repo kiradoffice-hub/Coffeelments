@@ -61,7 +61,7 @@ const menuItems = {
     ],
     hotCoffee: [
         { id: 201, name: 'Espresso', prices: { 'Chico': 45, 'Grande': 48 }, category: 'drinks', type: 'hot-coffee', image: 'images/espresso.jpg' },
-        { id: 202, name: 'Latte', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'hot-coffee', image: 'images/latte.jpg' },
+        { id: 202, name: 'Latte', prices: { 'Chico': 68, 'Grande': 72 }, category: 'drinks', type: 'hot-coffee', image: 'images/capuchino.jpg' },
         { id: 203, name: 'Espresso cortado', price: 48, category: 'drinks', type: 'hot-coffee', image: 'images/espresso-cortado.jpg' },
         { id: 204, name: 'Capuchino', price: 65, category: 'drinks', type: 'hot-coffee', image: 'images/capuchino.jpg' },
         { id: 205, name: 'Americano', price: 48, category: 'drinks', type: 'hot-coffee', image: 'images/americano.jpg' },
