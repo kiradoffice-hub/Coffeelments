@@ -49,8 +49,10 @@ const products = [
 // ============================================
 // DATOS DEL MENÚ
 // ============================================
+// ============================================
+// DATOS DEL MENÚ
+// ============================================
 const menuItems = {
-    const menuItems = {
     frappes: [
         { id: 101, name: 'Frapuccino', price: 75, category: 'drinks', type: 'frappe', image: 'images/frapuccino.jpg' },
         { id: 102, name: 'Cajeta', price: 75, category: 'drinks', type: 'frappe', image: 'images/frappe_cajeta.jpg' },
