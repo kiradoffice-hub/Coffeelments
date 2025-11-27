@@ -823,17 +823,19 @@ function createMenuItem(item) {
     const selectedSize = selectedMenuSizes[item.id];
     const currentPrice = hasMultipleSizes ? item.prices[selectedSize] : item.price;
     
-    // Determinar emoji por defecto si no hay imagen
     const defaultEmoji = item.type === 'frappe' ? '🧊' : item.type === 'tea' ? '🍵' : '☕';
+    
+    let imageHTML = '';
+    if (item.image) {
+        imageHTML = `<img src="${item.image}" alt="${item.name}">`;
+    } else {
+        imageHTML = `<div style="font-size:3rem;display:flex;align-items:center;justify-content:center;height:100%;background:#f5f5f5;">${defaultEmoji}</div>`;
+    }
     
     return `
         <div class="menu-item" data-menu-id="${item.id}">
             <div class="menu-item-image">
-                ${item.image ? 
-                    `<img src="${item.image}" alt="${item.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\\'font-size:3rem;display:flex;align-items:center;justify-content:center;height:100%;background:#f5f5f5;border-radius:8px 8px 0 0;\\'>${defaultEmoji}</div>'">` 
-                    : 
-                    `<div style="font-size:3rem;display:flex;align-items:center;justify-content:center;height:100%;background:#f5f5f5;">${defaultEmoji}</div>`
-                }
+                ${imageHTML}
             </div>
             <div class="menu-item-content">
                 <div class="menu-item-header">
