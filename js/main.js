@@ -665,16 +665,20 @@ function createSearchResultCard(item) {
             </div>
         `;
     } else {
+        // PARA BEBIDAS - AHORA CON IMÁGENES REALES
         const hasMultipleSizes = item.prices && typeof item.prices === 'object';
         const selectedSize = selectedMenuSizes[item.id];
         const currentPrice = hasMultipleSizes ? item.prices[selectedSize] : item.price;
+        const defaultEmoji = item.type === 'frappe' ? '🧊' : item.type === 'tea' ? '🍵' : '☕';
         
         return `
             <div class="search-result-card drink-card" onclick="navigateToProduct('drink', ${item.id})">
                 <div class="result-image">
-                    <div style="font-size:3rem;display:flex;align-items:center;justify-content:center;height:100%;background:#f5f5f5;border-radius:8px;">
-                        ${item.type === 'frappe' ? '🧊' : item.type === 'tea' ? '🍵' : '☕'}
-                    </div>
+                    ${item.image ? 
+                        `<img src="${item.image}" alt="${item.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\\'font-size:3rem;display:flex;align-items:center;justify-content:center;height:100%;background:#f5f5f5;border-radius:8px;\\'>${defaultEmoji}</div>'">` 
+                        : 
+                        `<div style="font-size:3rem;display:flex;align-items:center;justify-content:center;height:100%;background:#f5f5f5;border-radius:8px;">${defaultEmoji}</div>`
+                    }
                 </div>
                 <div class="result-info">
                     <h4>${item.name}</h4>
@@ -688,7 +692,6 @@ function createSearchResultCard(item) {
         `;
     }
 }
-
 function navigateToProduct(type, id) {
     if (type === 'coffee') {
         showPage('productos');
