@@ -824,23 +824,30 @@ function createMenuItem(item) {
     
     return `
         <div class="menu-item" data-menu-id="${item.id}">
-            <div class="menu-item-header">
-                <div class="menu-item-name">${item.name}</div>
-                <div class="menu-item-price" id="menu-price-${item.id}">$${currentPrice}.00</div>
-            </div>
-            ${hasMultipleSizes ? `
-                <div class="menu-item-sizes">
-                    ${Object.keys(item.prices).map(size => `
-                        <button class="size-btn ${selectedSize === size ? 'active' : ''}" 
-                                onclick="selectMenuSize(${item.id}, '${size}')">
-                            ${size}
-                        </button>
-                    `).join('')}
+            ${item.image ? `
+                <div class="menu-item-image">
+                    <img src="${item.image}" alt="${item.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\\'font-size:3rem;display:flex;align-items:center;justify-content:center;height:100%\\'>${item.type === 'frappe' ? '🧊' : item.type === 'tea' ? '🍵' : '☕'}</div>'">
                 </div>
             ` : ''}
-            <button class="menu-item-add" onclick="addMenuToCart(${item.id})">
-                + Agregar al carrito
-            </button>
+            <div class="menu-item-content">
+                <div class="menu-item-header">
+                    <div class="menu-item-name">${item.name}</div>
+                    <div class="menu-item-price" id="menu-price-${item.id}">$${currentPrice}.00</div>
+                </div>
+                ${hasMultipleSizes ? `
+                    <div class="menu-item-sizes">
+                        ${Object.keys(item.prices).map(size => `
+                            <button class="size-btn ${selectedSize === size ? 'active' : ''}" 
+                                    onclick="selectMenuSize(${item.id}, '${size}')">
+                                ${size}
+                            </button>
+                        `).join('')}
+                    </div>
+                ` : ''}
+                <button class="menu-item-add" onclick="addMenuToCart(${item.id})">
+                    + Agregar al carrito
+                </button>
+            </div>
         </div>
     `;
 }
